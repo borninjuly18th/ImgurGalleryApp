@@ -1,0 +1,3 @@
+package com.bezgrebelny.imgurgalleryapp.core.model
+
+class DescriptionAnnotationsModel

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Imgur Gallery</string>
+
+    <!--other-->
+    <string name="snackbar_retry">Retry</string>
+    <string name="no_description">No description</string>
+
+    <!--gallery-->
+    <string name="gallery_title">Imgur Gallery</string>
+    <string name="gallery_error_message">No internet connection</string>
+    <string name="gallery_menu_update">Update</string>
+
+    <!--view image-->
+    <string name="view_image_comment_author_format">%1$s via %2$s</string>
+    <string name="view_image_comment_pts_format">%d pts</string>
+    <string name="view_image_comment_hr_format">%d hr</string>
+
+</resources>
