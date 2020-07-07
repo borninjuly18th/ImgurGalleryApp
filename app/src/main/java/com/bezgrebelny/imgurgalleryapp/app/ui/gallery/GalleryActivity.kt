@@ -45,6 +45,11 @@ class GalleryActivity : ActivityBase() {
         setupData()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _adapter.cleanUp()
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.gallery_menu, menu)
         return true

@@ -32,4 +32,8 @@ class AdapterDelegate<U>(vararg delegateItem: AdapterItem<*>) :
     override fun onBindViewHolder(holder: ViewHolder<U>, position: Int) {
         adapterManager.onBindViewHolder(holder, dataList[position])
     }
+
+    fun cleanUp() {
+        adapterManager.cleanUp()
+    }
 }

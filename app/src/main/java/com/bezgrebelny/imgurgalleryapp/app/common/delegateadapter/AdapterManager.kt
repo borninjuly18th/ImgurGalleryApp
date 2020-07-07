@@ -42,7 +42,7 @@ class AdapterManager<U : UiModel>(private vararg val delegateItem: AdapterItem<*
     }
 
     /** для узбежания утечки лучше очищать список адаптеров */
-    protected fun finalize() {
+    fun cleanUp() {
         delegateItem.forEach {
             it.cleanUp()
         }

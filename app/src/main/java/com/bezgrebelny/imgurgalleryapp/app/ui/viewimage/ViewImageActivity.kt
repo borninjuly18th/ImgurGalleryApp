@@ -41,6 +41,12 @@ class ViewImageActivity : ActivityBase() {
         setupEvent()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        imageAdapter.cleanUp()
+        commentAdapter.cleanUp()
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean =
         if (item.itemId == android.R.id.home) {
             onBackPressed()

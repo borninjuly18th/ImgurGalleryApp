@@ -23,6 +23,10 @@ class AdapterDelegatePaged<U, T>(vararg delegateItem: AdapterItem<*>) :
         getItem(position)?.let { adapterManager.onBindViewHolder(holder, it) }
     }
 
+    fun cleanUp() {
+        adapterManager.cleanUp()
+    }
+
     companion object {
         private fun <T, U : IdModel<T>> getDiffUtil() = object : DiffUtil.ItemCallback<U>() {
 
